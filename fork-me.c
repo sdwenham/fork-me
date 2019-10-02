@@ -13,8 +13,7 @@ int main()
     int i;
     long page_size = sysconf(_SC_PAGESIZE);
     long ram_size = page_size * 1000;
-    for (i=0;i<10;i++) {
-        long j;
+    for (i=0;i<1000;i++) {
         //printf("Round %d Using %ld bytes of memory\n", i, ram_size);
         char* tmp = (char*) malloc(ram_size);
           if (tmp)
